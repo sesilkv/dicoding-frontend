@@ -6,6 +6,13 @@ body {
     font-family: sans-serif;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
 .flex-container-column {
     display: flex;
     flex-direction: column;
@@ -13,6 +20,15 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: right;
+}
+
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    border: 1px solid black;
+    font-size: 2em;
 }
 
 .flex-container-row {
@@ -30,6 +46,22 @@ body {
     cursor: pointer;
 }
 
-.double{
+.button:hover{
+    font-weight: bold;
+}
+
+.double {
     flex-basis: 50%;
 }
+
+.operator,
+.negative,
+.equals {
+   background: orange;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+ }
